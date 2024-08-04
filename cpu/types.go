@@ -7,9 +7,9 @@ const (
 )
 
 type CpuState struct {
-	DataRegister    [8]*uint64
-	AddressRegister [8]*uint64
-	SSP             *uint64
+	DataRegister    [8]uint64
+	AddressRegister [8]uint64
+	SSP             uint64
 	PC              uint64
 	SR              uint16
 	Memory          []byte
